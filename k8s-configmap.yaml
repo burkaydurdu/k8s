@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8s-config
+data:
+  APP_NAME: K8s-APP
+  APP_COLOR: blue
+  APP_VERSION: 0.0.1
