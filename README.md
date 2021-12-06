@@ -34,6 +34,13 @@ kubectl get ConfigMap/k8s-config -o yaml
 k get ConfigMap/k8s-config -o yaml > k8s-copy-config.yaml
 ```
 
+### Exec Pod
+``kubectl exec -it my-kubernetes-dashboard [command]``
+
+```
+kubectl exec -it my-kubernetes-dashboard cat /var/run/secrets/kubernetes.io/serviceaccount/token
+```
+
 ## Build
 ---
 ### Apply to yaml files.
